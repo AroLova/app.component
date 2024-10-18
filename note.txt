@@ -1,0 +1,24 @@
+Profil utilisateur 
+Item pour le parametre de profil:
+    -Mode de payment
+    -Securité
+    -autre reglagle
+Item application setting
+
+
+Profil general
+
+import { View, Text, Button } from 'react-native';
+import { useRouter } from 'expo-router';
+
+const ChatsPage = () => {
+  const router = useRouter();
+  return (
+    <View>
+      <Text>Chats Page</Text>
+      <Button title="Go to Chat Details" onPress={() => router.push('/chats/details')} />
+    </View>
+  );
+};
+
+export default ChatsPage;
